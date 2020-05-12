@@ -15,8 +15,8 @@ class App extends Component {
         active: true,
         finishDate: null
       },
-      { id: 1, text: 'Text 2', date: '2020-11-12', important: false, active: true, finishDate: null },
-      { id: 2, text: 'Text 3', date: '2020-09-11', important: false, active: true, finishDate: null },
+      { id: 1, text: 'ZZZZZ 2', date: '2020-11-12', important: false, active: true, finishDate: null },
+      { id: 2, text: 'aaa 3', date: '2020-09-11', important: false, active: true, finishDate: null },
       { id: 3, text: 'Text 4', date: '2020-05-20', important: true, active: true, finishDate: null },
       { id: 4, text: 'Text 5', date: '2020-11-12', important: false, active: true, finishDate: null },
       { id: 5, text: 'Text 6', date: '2020-09-11', important: false, active: true, finishDate: null },
