@@ -28,10 +28,38 @@ class App extends Component {
 
   deleteTask = (id) => {
     console.log('delete an element with id in App: ' + id);
+    // const tasks = [...this.state.tasks];
+    // console.log('tasks before removing: ', tasks)
+    // const index = tasks.findIndex(task => task.id === id);
+    // tasks.splice(index, 1);
+    // console.log('tasks after removing: ', tasks);
+    // this.setState({
+    //   tasks
+    // })
+    
+    let tasks = [...this.state.tasks];
+    console.log('tasks before removing: ', tasks)
+    tasks = tasks.filter(task => task.id !==id)
+    console.log('tasks after removing: ', tasks)
+    this.setState({
+      tasks
+    })
   }
 
   changeTaskStatus = (id) => {
     console.log('change an element with id in App: ' + id);
+    const tasks = Array.from(this.state.tasks);
+    tasks.forEach(task => {
+      if (task.id === id) {
+        task.active = false;
+        task.finishDate = new Date().getTime()
+        console.log(task.finishDate);
+      }
+    })
+    this.setState({
+      tasks
+      
+    })
   } 
 
   render() {
