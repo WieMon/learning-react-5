@@ -27,7 +27,7 @@ class App extends Component {
   }
 
   deleteTask = (id) => {
-    console.log('delete an element with id in App: ' + id);
+    //console.log('delete an element with id in App: ' + id);
     // const tasks = [...this.state.tasks];
     // console.log('tasks before removing: ', tasks)
     // const index = tasks.findIndex(task => task.id === id);
@@ -38,9 +38,9 @@ class App extends Component {
     // })
     
     let tasks = [...this.state.tasks];
-    console.log('tasks before removing: ', tasks)
+    //console.log('tasks before removing: ', tasks)
     tasks = tasks.filter(task => task.id !==id)
-    console.log('tasks after removing: ', tasks)
+    //console.log('tasks after removing: ', tasks)
     this.setState({
       tasks
     })
@@ -53,7 +53,7 @@ class App extends Component {
       if (task.id === id) {
         task.active = false;
         task.finishDate = new Date().getTime()
-        console.log(task.finishDate);
+        //console.log(task.finishDate);
       }
     })
     this.setState({
